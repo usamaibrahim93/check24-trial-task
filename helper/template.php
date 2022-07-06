@@ -22,5 +22,19 @@ function getFooter(){
 }
 
 function getBlogUrl($slug){
-    return HOME_URL . '/blog/' . $slug;
+    return homeUrl() . '/blog/' . $slug;
+}
+
+function homeUrl(){
+    if(isset($_SERVER['HTTPS'])){
+        $protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
+    }
+    else{
+        $protocol = 'http';
+    }
+    return $protocol . "://" . $_SERVER['HTTP_HOST'] ;
+}
+
+function getBlogExcerpt($content, $postfix = '...'){
+    return substr($content, 0, 1000) . $postfix;
 }

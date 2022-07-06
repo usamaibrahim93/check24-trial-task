@@ -13,7 +13,7 @@
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light"><?php echo $blog['title']; ?></h1>
-                    <p><?php echo $blog['content']; ?></p>
+                    <p><?php echo getBlogExcerpt($blog['content']); ?></p>
                     <a class="btn btn-primary" href="<?php echo getBlogUrl($blog['slug']); ?>">Details</a>
                 </div>
             </div>
