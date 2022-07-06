@@ -3,10 +3,11 @@
  * Routes needing for the application
  */
 
-require_once("{$_SERVER['DOCUMENT_ROOT']}/router.php");
+require_once '../index.php';
+require_once ABSPATH . 'router/router.php';
 
 //Index route
-get('/', 'index.php');
+get('/', 'Controller/Index.php');
 
 //Get blog by slug
 get('/blog/$slug', 'Controller/Blog.php');
