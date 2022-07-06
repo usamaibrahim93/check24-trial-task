@@ -13,8 +13,8 @@ function getTemplate($template = '', $data = []){
     return $html;
 }
 
-function getHeader(){
-    return getTemplate('header');
+function getHeader($title){
+    return getTemplate('header', ['title' => $title]);
 }
 
 function getFooter(){

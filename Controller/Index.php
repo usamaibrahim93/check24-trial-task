@@ -3,7 +3,8 @@
 Class Index
 {
     public function execute(){
-        echo getTemplate('header');
+        echo getHeader('Home');
+        echo getFooter();
         // echo 'HomePage';
     }
 
