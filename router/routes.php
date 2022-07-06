@@ -9,6 +9,9 @@ require_once ABSPATH . 'router/router.php';
 //Index route
 get('/', 'Controller/Index.php');
 
+//DB Setup
+get('/dbsetup', 'dbsetup.php');
+
 //Get blog by slug
 get('/blog/$slug', 'Controller/Blog.php');
 

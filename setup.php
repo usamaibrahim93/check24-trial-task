@@ -8,3 +8,8 @@ $dotenv->load();
  * Load helper files
  */
 require_once ABSPATH . 'helper/template.php';
+
+/**
+ * Load Database connection
+ */
+require_once ABSPATH . 'database/Database.php';
