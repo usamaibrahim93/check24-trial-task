@@ -20,3 +20,7 @@ function getHeader($title){
 function getFooter(){
     return getTemplate('footer');
 }
+
+function getBlogUrl($slug){
+    return HOME_URL . '/blog/' . $slug;
+}

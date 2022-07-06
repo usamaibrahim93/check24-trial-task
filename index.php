@@ -11,4 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 
+define('HOME_URL', $_SERVER['SERVER_NAME']);
+
 require_once 'setup.php';

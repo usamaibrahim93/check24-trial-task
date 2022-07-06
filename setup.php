@@ -13,3 +13,8 @@ require_once ABSPATH . 'helper/template.php';
  * Load Database connection
  */
 require_once ABSPATH . 'database/Database.php';
+
+/**
+ * Load Models
+ */
+require_once ABSPATH . 'Model/Blog.php';
